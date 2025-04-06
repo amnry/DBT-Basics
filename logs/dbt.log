@@ -3915,3 +3915,169 @@ LEFT JOIN
 [0m18:09:57.961044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11832c320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073d4b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10765bb30>]}
 [0m18:09:57.961248 [debug] [MainThread]: Flushing usage events
 [0m18:09:58.046894 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:17:49.576617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111741130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11252c410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11252c170>]}
+
+
+============================== 18:17:49.579458 | a91b4ccf-e60b-476e-b560-9174f5bb2949 ==============================
+[0m18:17:49.579458 [info ] [MainThread]: Running with dbt=1.9.4
+[0m18:17:49.579768 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/amanarya/.dbt', 'log_path': '/Users/amanarya/Desktop/DE_Bootcamp/udemy_dbt_course/dbtlearn/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m18:17:49.720204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a91b4ccf-e60b-476e-b560-9174f5bb2949', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1136df140>]}
+[0m18:17:49.745217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a91b4ccf-e60b-476e-b560-9174f5bb2949', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113b5b80>]}
+[0m18:17:49.745751 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m18:17:49.806415 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m18:17:49.847399 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m18:17:49.847682 [debug] [MainThread]: Partial parsing: added file: dbtlearn://seeds/seed_full_moon_dates.csv
+[0m18:17:49.943232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a91b4ccf-e60b-476e-b560-9174f5bb2949', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114787560>]}
+[0m18:17:49.971991 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/amanarya/Desktop/DE_Bootcamp/udemy_dbt_course/dbtlearn/target/manifest.json
+[0m18:17:49.973494 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/amanarya/Desktop/DE_Bootcamp/udemy_dbt_course/dbtlearn/target/semantic_manifest.json
+[0m18:17:49.980797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a91b4ccf-e60b-476e-b560-9174f5bb2949', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114789a00>]}
+[0m18:17:49.981049 [info ] [MainThread]: Found 7 models, 1 seed, 472 macros
+[0m18:17:49.981208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a91b4ccf-e60b-476e-b560-9174f5bb2949', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1148d5c10>]}
+[0m18:17:49.982105 [info ] [MainThread]: 
+[0m18:17:49.982313 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:17:49.982476 [info ] [MainThread]: 
+[0m18:17:49.982750 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m18:17:49.983228 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m18:17:50.008428 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m18:17:50.008636 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m18:17:50.008769 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:17:50.478312 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.469 seconds
+[0m18:17:50.488275 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AIRBNB, now list_AIRBNB_DEV)
+[0m18:17:50.498404 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_DEV"
+[0m18:17:50.498771 [debug] [ThreadPool]: On list_AIRBNB_DEV: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_AIRBNB_DEV"} */
+show objects in AIRBNB.DEV limit 10000;
+[0m18:17:50.692987 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.194 seconds
+[0m18:17:50.696672 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AIRBNB_DEV, now list_AIRBNB_DEV_dbt_aman)
+[0m18:17:50.700587 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_DEV_dbt_aman"
+[0m18:17:50.701154 [debug] [ThreadPool]: On list_AIRBNB_DEV_dbt_aman: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_AIRBNB_DEV_dbt_aman"} */
+show objects in AIRBNB.DEV_dbt_aman limit 10000;
+[0m18:17:50.891572 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.190 seconds
+[0m18:17:50.893832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a91b4ccf-e60b-476e-b560-9174f5bb2949', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114a124e0>]}
+[0m18:17:50.895440 [debug] [Thread-1 (]: Began running node seed.dbtlearn.seed_full_moon_dates
+[0m18:17:50.895833 [info ] [Thread-1 (]: 1 of 1 START seed file DEV.seed_full_moon_dates ................................ [RUN]
+[0m18:17:50.896161 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_AIRBNB_DEV_dbt_aman, now seed.dbtlearn.seed_full_moon_dates)
+[0m18:17:50.896433 [debug] [Thread-1 (]: Began compiling node seed.dbtlearn.seed_full_moon_dates
+[0m18:17:50.896731 [debug] [Thread-1 (]: Began executing node seed.dbtlearn.seed_full_moon_dates
+[0m18:17:50.919644 [debug] [Thread-1 (]: Using snowflake connection "seed.dbtlearn.seed_full_moon_dates"
+[0m18:17:50.920053 [debug] [Thread-1 (]: On seed.dbtlearn.seed_full_moon_dates: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "seed.dbtlearn.seed_full_moon_dates"} */
+create table AIRBNB.DEV.seed_full_moon_dates (<?xml version="1.0" encoding="UTF-8"?> text)
+[0m18:17:51.050116 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bb8439-0002-a4fa-0000-0007b4969611
+[0m18:17:51.050412 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 46 unexpected '<'.
+[0m18:17:51.054020 [debug] [Thread-1 (]: Database Error in seed seed_full_moon_dates (seeds/seed_full_moon_dates.csv)
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 46 unexpected '<'.
+[0m18:17:51.055198 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a91b4ccf-e60b-476e-b560-9174f5bb2949', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114f1a210>]}
+[0m18:17:51.055985 [error] [Thread-1 (]: 1 of 1 ERROR loading seed file DEV.seed_full_moon_dates ........................ [[31mERROR[0m in 0.16s]
+[0m18:17:51.056548 [debug] [Thread-1 (]: Finished running node seed.dbtlearn.seed_full_moon_dates
+[0m18:17:51.056970 [debug] [Thread-4 (]: Marking all children of 'seed.dbtlearn.seed_full_moon_dates' to be skipped because of status 'error'.  Reason: Database Error in seed seed_full_moon_dates (seeds/seed_full_moon_dates.csv)
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 46 unexpected '<'..
+[0m18:17:51.058340 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:17:51.058640 [debug] [MainThread]: Connection 'seed.dbtlearn.seed_full_moon_dates' was left open.
+[0m18:17:51.058821 [debug] [MainThread]: On seed.dbtlearn.seed_full_moon_dates: Close
+[0m18:17:51.142132 [info ] [MainThread]: 
+[0m18:17:51.142411 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 1.16 seconds (1.16s).
+[0m18:17:51.142753 [debug] [MainThread]: Command end result
+[0m18:17:51.153880 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/amanarya/Desktop/DE_Bootcamp/udemy_dbt_course/dbtlearn/target/manifest.json
+[0m18:17:51.154761 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/amanarya/Desktop/DE_Bootcamp/udemy_dbt_course/dbtlearn/target/semantic_manifest.json
+[0m18:17:51.157529 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/amanarya/Desktop/DE_Bootcamp/udemy_dbt_course/dbtlearn/target/run_results.json
+[0m18:17:51.157681 [info ] [MainThread]: 
+[0m18:17:51.157853 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m18:17:51.157992 [info ] [MainThread]: 
+[0m18:17:51.158150 [error] [MainThread]:   Database Error in seed seed_full_moon_dates (seeds/seed_full_moon_dates.csv)
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 46 unexpected '<'.
+[0m18:17:51.158271 [info ] [MainThread]: 
+[0m18:17:51.158405 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m18:17:51.159836 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 1.6125472, "process_in_blocks": "0", "process_kernel_time": 0.1916, "process_mem_max_rss": "143147008", "process_out_blocks": "0", "process_user_time": 1.116739}
+[0m18:17:51.160106 [debug] [MainThread]: Command `dbt seed` failed at 18:17:51.160057 after 1.61 seconds
+[0m18:17:51.160306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e9cbf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c255e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1136dfbc0>]}
+[0m18:17:51.160495 [debug] [MainThread]: Flushing usage events
+[0m18:17:51.251950 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:20:23.044605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b67200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106cedd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070504a0>]}
+
+
+============================== 18:20:23.047514 | 9a248511-64a4-495d-9171-8f70471bea2a ==============================
+[0m18:20:23.047514 [info ] [MainThread]: Running with dbt=1.9.4
+[0m18:20:23.047823 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/amanarya/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/amanarya/Desktop/DE_Bootcamp/udemy_dbt_course/dbtlearn/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt seed', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:20:23.184653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9a248511-64a4-495d-9171-8f70471bea2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10768f470>]}
+[0m18:20:23.209061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9a248511-64a4-495d-9171-8f70471bea2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077c0bf0>]}
+[0m18:20:23.209465 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m18:20:23.271500 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m18:20:23.315667 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m18:20:23.315940 [debug] [MainThread]: Partial parsing: updated file: dbtlearn://seeds/seed_full_moon_dates.csv
+[0m18:20:23.402831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9a248511-64a4-495d-9171-8f70471bea2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107848200>]}
+[0m18:20:23.429942 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/amanarya/Desktop/DE_Bootcamp/udemy_dbt_course/dbtlearn/target/manifest.json
+[0m18:20:23.431332 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/amanarya/Desktop/DE_Bootcamp/udemy_dbt_course/dbtlearn/target/semantic_manifest.json
+[0m18:20:23.437854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9a248511-64a4-495d-9171-8f70471bea2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d51760>]}
+[0m18:20:23.438086 [info ] [MainThread]: Found 7 models, 1 seed, 472 macros
+[0m18:20:23.438260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9a248511-64a4-495d-9171-8f70471bea2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b617c0>]}
+[0m18:20:23.439051 [info ] [MainThread]: 
+[0m18:20:23.439213 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:20:23.439330 [info ] [MainThread]: 
+[0m18:20:23.439542 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m18:20:23.439908 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m18:20:23.465202 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m18:20:23.465415 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m18:20:23.465544 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:20:23.941329 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.476 seconds
+[0m18:20:23.949795 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AIRBNB, now list_AIRBNB_DEV)
+[0m18:20:23.960779 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_DEV"
+[0m18:20:23.961248 [debug] [ThreadPool]: On list_AIRBNB_DEV: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_AIRBNB_DEV"} */
+show objects in AIRBNB.DEV limit 10000;
+[0m18:20:24.066520 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.105 seconds
+[0m18:20:24.068401 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AIRBNB_DEV, now list_AIRBNB_DEV_dbt_aman)
+[0m18:20:24.070771 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_DEV_dbt_aman"
+[0m18:20:24.071103 [debug] [ThreadPool]: On list_AIRBNB_DEV_dbt_aman: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbtlearn", "target_name": "dev", "connection_name": "list_AIRBNB_DEV_dbt_aman"} */
+show objects in AIRBNB.DEV_dbt_aman limit 10000;
+[0m18:20:24.152571 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.081 seconds
+[0m18:20:24.155295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9a248511-64a4-495d-9171-8f70471bea2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a6c0e0>]}
+[0m18:20:24.157397 [debug] [Thread-1 (]: Began running node seed.dbtlearn.seed_full_moon_dates
+[0m18:20:24.157907 [info ] [Thread-1 (]: 1 of 1 START seed file DEV.seed_full_moon_dates ................................ [RUN]
+[0m18:20:24.158313 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_AIRBNB_DEV_dbt_aman, now seed.dbtlearn.seed_full_moon_dates)
+[0m18:20:24.158587 [debug] [Thread-1 (]: Began compiling node seed.dbtlearn.seed_full_moon_dates
+[0m18:20:24.158833 [debug] [Thread-1 (]: Began executing node seed.dbtlearn.seed_full_moon_dates
+[0m18:20:24.186349 [debug] [Thread-1 (]: Using snowflake connection "seed.dbtlearn.seed_full_moon_dates"
+[0m18:20:24.186672 [debug] [Thread-1 (]: On seed.dbtlearn.seed_full_moon_dates: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "seed.dbtlearn.seed_full_moon_dates"} */
+create table AIRBNB.DEV.seed_full_moon_dates (full_moon_date date)
+[0m18:20:24.436929 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.250 seconds
+[0m18:20:24.455685 [debug] [Thread-1 (]: Using snowflake connection "seed.dbtlearn.seed_full_moon_dates"
+[0m18:20:24.456120 [debug] [Thread-1 (]: On seed.dbtlearn.seed_full_moon_dates: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "seed.dbtlearn.seed_full_moon_dates"} */
+BEGIN
+[0m18:20:24.549637 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.093 seconds
+[0m18:20:24.553059 [debug] [Thread-1 (]: Using snowflake connection "seed.dbtlearn.seed_full_moon_dates"
+[0m18:20:24.553667 [debug] [Thread-1 (]: On seed.dbtlearn.seed_full_moon_dates: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "seed.dbtlearn.seed_full_moon_dates"} */
+insert into AIRBNB.DEV.seed_full_moon_dates (full_moon_date) values
+            (%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s),(%s...
+[0m18:20:25.403277 [debug] [Thread-1 (]: SQL status: SUCCESS 272 in 0.849 seconds
+[0m18:20:25.404539 [debug] [Thread-1 (]: Using snowflake connection "seed.dbtlearn.seed_full_moon_dates"
+[0m18:20:25.404999 [debug] [Thread-1 (]: On seed.dbtlearn.seed_full_moon_dates: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "dbtlearn", "target_name": "dev", "node_id": "seed.dbtlearn.seed_full_moon_dates"} */
+COMMIT
+[0m18:20:25.708726 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.303 seconds
+[0m18:20:25.713971 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbtlearn.seed_full_moon_dates"
+[0m18:20:25.732402 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9a248511-64a4-495d-9171-8f70471bea2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bdc4d0>]}
+[0m18:20:25.732737 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file DEV.seed_full_moon_dates ............................ [[32mINSERT 272[0m in 1.57s]
+[0m18:20:25.733085 [debug] [Thread-1 (]: Finished running node seed.dbtlearn.seed_full_moon_dates
+[0m18:20:25.733753 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:20:25.733919 [debug] [MainThread]: Connection 'seed.dbtlearn.seed_full_moon_dates' was left open.
+[0m18:20:25.734076 [debug] [MainThread]: On seed.dbtlearn.seed_full_moon_dates: Close
+[0m18:20:25.833221 [info ] [MainThread]: 
+[0m18:20:25.833588 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 2.39 seconds (2.39s).
+[0m18:20:25.834095 [debug] [MainThread]: Command end result
+[0m18:20:25.850103 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/amanarya/Desktop/DE_Bootcamp/udemy_dbt_course/dbtlearn/target/manifest.json
+[0m18:20:25.851412 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/amanarya/Desktop/DE_Bootcamp/udemy_dbt_course/dbtlearn/target/semantic_manifest.json
+[0m18:20:25.855003 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/amanarya/Desktop/DE_Bootcamp/udemy_dbt_course/dbtlearn/target/run_results.json
+[0m18:20:25.855195 [info ] [MainThread]: 
+[0m18:20:25.855405 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:20:25.855565 [info ] [MainThread]: 
+[0m18:20:25.855725 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m18:20:25.857318 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 2.84166, "process_in_blocks": "0", "process_kernel_time": 0.193837, "process_mem_max_rss": "142589952", "process_out_blocks": "0", "process_user_time": 1.163871}
+[0m18:20:25.857620 [debug] [MainThread]: Command `dbt seed` succeeded at 18:20:25.857542 after 2.84 seconds
+[0m18:20:25.857870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074ccef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107abb830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106380170>]}
+[0m18:20:25.858098 [debug] [MainThread]: Flushing usage events
+[0m18:20:25.941223 [debug] [MainThread]: An error was encountered while trying to flush usage events
