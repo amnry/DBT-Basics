@@ -1,5 +1,5 @@
 WITH raw_hosts AS (
-    SELECT * FROM AIRBNB.RAW.RAW_HOSTS
+    SELECT * FROM AIRBNB.raw.raw_hosts
 )
 
 SELECT
