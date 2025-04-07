@@ -1,8 +1,15 @@
 version: 2
 models:
   - name: dim_listings_cleansed
+    description: "Listings with nulls removed"
     columns:
       - name: listing_id
+        description: "Unique ID of the listing"
+        tests:
+          - unique
+          - not_null
+      - name: listing_id
+        description: "Unique ID of the listing"
         tests:
           - unique
           - not_null
