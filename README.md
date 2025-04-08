@@ -80,5 +80,4 @@ The project uses the following source tables from the AIRBNB.RAW schema:
 - `raw_hosts`
 
 ## Resources
-
-- [dbt bootcamp]([https://www.udemy.com/course/dbt-zero-to-hero/](https://www.udemy.com/certificate/UC-b496620a-ab8d-41f3-b0dc-8b9364605fc3/)) - Comprehensive Udemy course on dbt
+- [dbt bootcamp](https://www.udemy.com/course/dbt-zero-to-hero/) - Comprehensive Udemy course on dbt
