@@ -8,8 +8,25 @@ models:
         tests:
           - unique
           - not_null
-      - name: listing_id
-        description: "Unique ID of the listing"
+
+  - name: dim_hosts_cleansed
+    description: "Hosts with cleaned data and null values handled"
+    columns:
+      - name: host_id
+        description: "Unique identifier for each host"
         tests:
           - unique
           - not_null
+      - name: host_name
+        description: "Name of the host, defaults to 'Anonymous' if null"
+        tests:
+          - not_null
+      - name: is_superhost
+        description: "Indicates whether the host has superhost status"
+        tests:
+          - accepted_values:
+              values: ['t', 'f']
+      - name: created_at
+        description: "Timestamp when the host account was created"
+      - name: updated_at
+        description: "Timestamp when the host information was last updated"
